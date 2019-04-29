@@ -343,3 +343,13 @@ time = toc;
 
 end
 
+% The following functions were written by another programmer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title: trandn.m code
+% Author: Zdravko Botev
+% Date: 2016
+% Code version: 1.0
+% https://www.mathworks.com/matlabcentral/fileexchange/53180-truncated-normal-generator
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
