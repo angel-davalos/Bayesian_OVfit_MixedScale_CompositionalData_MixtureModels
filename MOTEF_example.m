@@ -21,16 +21,16 @@
 
 % clear;clc;
 
-basefldr = 'H:/Dissertation/';
+basefldr = '~'; % Specify location where Functions folder is stored
 
 % The following loads MOTEF functions
-addpath(sprintf('%s%s',basefldr,'BayesianMixedScaleCompDataPackage/Functions'))
+addpath(sprintf('%s%s',basefldr,'/Functions'))
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Read in data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-infile = sprintf('%s%s',basefldr,"Paper_1/MOTEF/Data/MOTEF_example.mat");
+infile = sprintf('%s%s',basefldr,"/Data/MOTEF_example.mat");
 load(infile);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,7 +117,7 @@ subplot(1,3,3);heatmap(labelsout,...
 labelsout,1*(pinfest>0.95),'Colormap',flipud(hot));
 title("Posterior Probability of Dependence > 0.95");
 
-saveas(gcf , sprintf('%s%s',basefldr,"Paper_1/MOTEF/Code/MOTEF_example_plots.jpg"));
+saveas(gcf , sprintf('%s%s',basefldr,"/MOTEF_example_plots.jpg"));
 close(gcf);
 
 % The following functions were created by other programmers
